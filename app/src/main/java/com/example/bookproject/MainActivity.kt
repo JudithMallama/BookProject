@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             infoTextView.text = nameBook
             infoTextView.text = autorBook
             infoTextView.text = pagesBook
-            infoTextView.text = resumeBook
+            infoTextView.text = resumeBook//
         }
     }
 }
