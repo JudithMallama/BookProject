@@ -5,32 +5,42 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.example.bookproject.databinding.ActivityMainBinding
+
 //Prueba2
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var mainBinding :ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        mainBinding = ActivityMainBinding.inflate(layoutInflater)
 
-        val nameBookEditText : EditText = findViewById(R.id.name_book_edit_text)
-        val nameAutorEditText : EditText = findViewById(R.id.name_autor_edit_text)
-        val pagesEditText : EditText = findViewById(R.id.pages_edit_text)
-        val  resumeEditText : EditText = findViewById(R.id.resume_edit_text)
+        setContentView(mainBinding.root)
 
+        //val nameBookEditText : EditText = findViewById(R.id.name_book_edit_text)
 
+        var numero : Int? = null
+        numero = null
 
-        val saveButton: Button= findViewById(R.id.save_button)
-        val infoTextView : TextView = findViewById(R.id.info_text_view)
+        with(mainBinding) {
+            saveButton.setOnClickListener {
 
-        saveButton.setOnClickListener {
-            val nameBook :String = nameBookEditText.text.toString()
-            val autorBook : String = nameAutorEditText.text.toString()
-            val pagesBook : String = pagesEditText.text.toString()
-            val resumeBook : String =  resumeEditText.text.toString()
+                if(nameBookEditText.text.isEmpty() ||
+                    nameAutorEditText.text.isNotEmpty() ||
+                    pagesEditText.text?.isEmpty() == true)
+                    {
+                        val nameBook: String = nameBookEditText.text.toString()
+                        val autorBook = nameAutorEditText.text.toString()
+                        val pagesBook = pagesEditText.text.toString().toInt()
+                        val resumeBook = resumeEditText.text.toString()
 
-            infoTextView.text = nameBook
-            infoTextView.text = autorBook
-            infoTextView.text = pagesBook
-            infoTextView.text = resumeBook//
+                        infoTextView.text = "name: " + nameBook
+                        infoTextView.text = autorBook
+                        //mainBinding.infoTextView.text = pagesBook
+                        infoTextView.text = resumeBook//
+                }
+            }
         }
     }
 }
