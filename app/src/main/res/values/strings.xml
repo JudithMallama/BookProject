@@ -9,4 +9,11 @@
     <string name="Resumen">Resumen:</string>
     <string name="guardar_botton">Guardar</string>
     <string name="Information">Informacion</string>
+    <string name="info">"Nombre: %s \nAutor: %s \nPáginas: %d \nResumen: %sGénero(s): %s</string>
+    <string name="genere">Género</string>
+    <string name="suspence">Suspenso</string>
+    <string name="terror">Terror</string>
+    <string name="infaltile">Infantil</string>
+    <string name="comic">Comedia</string>/>
+
 </resources>

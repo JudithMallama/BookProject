@@ -41,6 +41,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="@string/name_book_edit"
@@ -48,8 +50,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/name_text_view"
         app:layout_constraintTop_toBottomOf="@+id/title_text_view"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/name_autor_edit_text"
@@ -111,13 +112,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="8dp"
         android:text="@string/guardar_botton"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resume_text_input_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/resume_text_input_layout"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/info_text_view"
@@ -130,5 +133,64 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/save_button" />
+
+    <TextView
+        android:id="@+id/genere_text_view"
+        style="@style/TextViewSubTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/genere"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resume_text_input_layout"
+        tools:ignore="TextContrastCheck" />
+
+    <CheckBox
+        android:id="@+id/suspence_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/suspence"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genere_text_view"
+        tools:ignore="TextContrastCheck" />
+
+    <CheckBox
+        android:id="@+id/terror_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/terror"
+        app:layout_constraintStart_toEndOf="@+id/suspence_check_box"
+        app:layout_constraintTop_toBottomOf="@+id/genere_text_view"
+        tools:ignore="TextContrastCheck" />
+
+    <CheckBox
+        android:id="@+id/infantile_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/infaltile"
+        app:layout_constraintStart_toEndOf="@+id/terror_check_box"
+        app:layout_constraintTop_toBottomOf="@+id/genere_text_view"
+        tools:ignore="TextContrastCheck" />
+
+    <CheckBox
+        android:id="@+id/comic_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/comic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/infantile_check_box"
+        app:layout_constraintTop_toBottomOf="@+id/genere_text_view"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
