@@ -9,11 +9,19 @@
     <string name="Resumen">Resumen:</string>
     <string name="guardar_botton">Guardar</string>
     <string name="Information">Informacion</string>
-    <string name="info">"Nombre: %s \nAutor: %s \nPáginas: %d \nResumen: %sGénero(s): %s</string>
+    <string name="info">"Nombre: %s \nAutor: %s \nPáginas: %d \nResumen: %s\nGénero(s): %s \nCalificación: %d \nFecha de publicación: %s \n\n </string>
     <string name="genere">Género</string>
     <string name="suspence">Suspenso</string>
     <string name="terror">Terror</string>
     <string name="infaltile">Infantil</string>
-    <string name="comic">Comedia</string>/>
+    <string name="comic">Comedia</string>
+    <string name="score">Calificación</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="publication_date">Fecha de publicación</string>
+    <string name="date_format">dd-mm-yyyy</string>
 
 </resources>
