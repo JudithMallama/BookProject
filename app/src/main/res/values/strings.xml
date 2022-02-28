@@ -34,5 +34,10 @@
     <string name="rep_password">Repita la contraseña:</string>
     <string name="Register">Registrar</string>
     <string name="sing_out">Cerrar sesión</string>
+    <string name="titulo_operaciones">Operaciones</string>
+    <string name="msg_number_one">Digite un número:</string>
+    <string name="calculate">Calcular</string>
+    <string name="total_example">La suma es: 15</string>
+    <string name="calculo"><u>Quieres hacer un cálculo</u></string>
 
 </resources>

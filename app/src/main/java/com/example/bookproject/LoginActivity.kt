@@ -29,6 +29,11 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        loginBinding.calculoTextView.setOnClickListener {
+            val intent = Intent(this, ExampleMVVM::class.java)
+            startActivity(intent)
+        }
+
         with(loginBinding){
             singInButton.setOnClickListener{
                 val email = emailEditText.text.toString()
