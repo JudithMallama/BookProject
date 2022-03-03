@@ -30,8 +30,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         loginBinding.calculoTextView.setOnClickListener {
-            val intent = Intent(this, ExampleMVVM::class.java)
-            startActivity(intent)
+           val intent = Intent(this, EjemploActivity::class.java)
+           startActivity(intent)
         }
 
         with(loginBinding){
