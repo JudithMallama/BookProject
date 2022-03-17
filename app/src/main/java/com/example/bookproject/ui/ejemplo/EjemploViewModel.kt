@@ -1,4 +1,4 @@
-package com.example.bookproject
+package com.example.bookproject.ui.ejemplo
 
 import android.util.Log
 import androidx.lifecycle.LiveData

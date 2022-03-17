@@ -1,9 +1,10 @@
-package com.example.bookproject
+package com.example.bookproject.ui.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.bookproject.databinding.ActivitySplashBinding
+import com.example.bookproject.ui.login.LoginActivity
 import java.util.*
 import kotlin.concurrent.timerTask
 
