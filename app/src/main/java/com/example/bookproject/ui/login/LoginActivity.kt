@@ -1,10 +1,13 @@
-package com.example.bookproject
+package com.example.bookproject.ui.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.bookproject.ui.main.MainActivity
+import com.example.bookproject.ui.register.RegisterActivity
 import com.example.bookproject.databinding.ActivityLoginBinding
+import com.example.bookproject.ui.ejemplo.EjemploActivity
 
 class LoginActivity : AppCompatActivity() {
 

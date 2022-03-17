@@ -1,4 +1,4 @@
-package com.example.bookproject
+package com.example.bookproject.ui.ejemplo
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +12,7 @@ class EjemploActivity : AppCompatActivity() {
     private lateinit var ejemploBinding: ActivityEjemploBinding
     private lateinit var ejemploViewModel: EjemploViewModel
 
-    @SuppressLint("SetTextI18n")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         ejemploBinding = ActivityEjemploBinding.inflate(layoutInflater)
@@ -20,13 +20,13 @@ class EjemploActivity : AppCompatActivity() {
 
         ejemploViewModel = ViewModelProvider(this).get(EjemploViewModel::class.java)
 
-        ejemploViewModel.totalDone.observe(this, { resul ->
-            ejemploBinding.totalTextView.text = "la suma es: " + resul.toString()
-        })
+        ejemploViewModel.totalDone.observe(this) { resul ->
+            ejemploBinding.totalTextView.text = "la suma es: $resul"
+        }
 
-        ejemploViewModel.msgDone.observe(this, { result ->
+        ejemploViewModel.msgDone.observe(this) { result ->
             Toast.makeText(this, result, Toast.LENGTH_SHORT).show()
-        })
+        }
 
         with(ejemploBinding) {
             calculateButton.setOnClickListener {

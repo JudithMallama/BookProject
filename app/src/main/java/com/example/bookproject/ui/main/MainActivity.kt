@@ -1,4 +1,4 @@
-package com.example.bookproject
+package com.example.bookproject.ui.main
 
 import android.app.DatePickerDialog
 import android.content.Intent
@@ -7,11 +7,13 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.bookproject.R
 import com.example.bookproject.databinding.ActivityMainBinding
+import com.example.bookproject.ui.login.LoginActivity
 import java.text.SimpleDateFormat
 import java.util.*
 
-//Prueba2
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainBinding: ActivityMainBinding
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(mainBinding.root)
 
         //val nameBookEditText : EditText = findViewById(R.id.name_book_edit_text)
+ /*
         val dateSetListener = DatePickerDialog.OnDateSetListener { _, year, month, dayOfMonth ->
             cal.set(Calendar.YEAR, year)
             cal.set(Calendar.MONTH, month)
@@ -113,6 +116,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
-
+*/
     }
 }

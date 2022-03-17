@@ -39,5 +39,7 @@
     <string name="calculate">Calcular</string>
     <string name="total_example">La suma es: 15</string>
     <string name="calculo"><u>Quieres hacer un cálculo</u></string>
+    <string name="example_title">El psicoanalista</string>
+    <string name="example_author">Jhon Kat</string>
 
 </resources>
